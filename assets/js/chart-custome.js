@@ -56,14 +56,14 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: [' Principal and Interest $23,565', 'HOA Dues $2,036', 'Property Taxes $1,068'],
+        labels: ['Publish', 'Tersewa'],
         datasets: [{
             label: 'My First dataset',
             segmentShowStroke : true,
             segmentStrokeColor : "transparent",
             segmentStrokeWidth : 17,
-            backgroundColor: ["#1BC4BD", "#E5EAEE", "rgba(255,99,132,0.2)"],
-            data: [50, 25, 25],
+            backgroundColor: ["#1BC4BD", "#1C2954"],
+            data: [50, 25],
             responsive: true,
             showScale: true
         }]
@@ -85,10 +85,15 @@ var chart = new Chart(ctx, {
         labels: ["2017", "2018", "2019", "2020", "2021", "2022"],
         // Information about the dataset
     datasets: [{
-            label: "Dataset",
-            backgroundColor: 'rgba(255,99,132,0.2)',
-            borderColor: '#EB6753',
+            label: "BUMN",
+            backgroundColor: 'rgba(78,176,187,0.2)',
+            borderColor: '#4EB0BB',
             data: [50, 150, 200, 240, 290, 330],
+        }, {
+            label: "SWASTA",
+            backgroundColor: 'rgba(28,41,84,0.2)',
+            borderColor: '#1C2954',
+            data: [80, 140, 280, 180, 200, 390],
         }]
     },
 
@@ -165,13 +170,21 @@ var myChart = new Chart(ctx, {
   data: {
     labels: ["1 Aug", "8 Aug", "15 Aug", "22 Aug", "29 Aug", "05 Sep"],
     datasets: [{
-      label: 'Aqua',
+      label: 'Tanah',
       data: [70, 95, 125, 100, 120, 140, 0],
       backgroundColor: "#1BC4BD"
     }, {
-      label: 'Gray',
+      label: 'Residensial',
       data: [60, 80, 110, 85, 110, 130, 0],
-      backgroundColor: "#E5EAEE"
+      backgroundColor: "#173D84"
+    }, {
+        label: 'Komersial',
+        data: [80, 30, 125, 75, 110, 90, 0],
+        backgroundColor: "#EE4D2D"
+    }, {
+        label: 'R. Serbaguna',
+        data: [100, 70, 125, 50, 80, 40, 0],
+        backgroundColor: "#FCD017"
     }]
   }
 });

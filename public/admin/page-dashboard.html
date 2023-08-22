@@ -171,25 +171,33 @@
           <div class="sidebar_list_item ">
             <a href="page-dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Message</a>
           </div>
+
+          <p class="fz15 fw400 ff-heading mt30">MASTER DATA</p>
+          <div class="sidebar_list_item ">
+            <a href="page-dashboard-master.html" class="items-center"><i class="flaticon-ruler mr15"></i>Properti</a>
+          </div>
+          <div class="sidebar_list_item ">
+            <a href="page-dashboard-add-user.html" class="items-center"><i class="flaticon-photo mr15"></i>Tambah User</a>
+          </div>
+
+
+          <p class="fz15 fw400 ff-heading mt30">REPORT</p>
+          <div class="sidebar_list_item ">
+            <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>Tabel Properti</a>
+          </div>
+          <div class="sidebar_list_item ">
+            <a href="page-dashboard-user.html" class="items-center"><i class="flaticon-user-1 mr15"></i>Tabel User</a>
+          </div>
+      
+          <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
+          <div class="sidebar_list_item ">
+            <a href="edit-profile.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
+          </div>
           <div class="sidebar_list_item ">
             <a href="page-agency-single.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
           </div>
-
-          <p class="fz15 fw400 ff-heading mt30">MASTER DATA</p>
-
-
-          <p class="fz15 fw400 ff-heading mt30">MANAGE LISTINGS</p>
           <div class="sidebar_list_item ">
-            <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>Properties</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-favorites.html" class="items-center"><i class="flaticon-like mr15"></i>My Favorites</a>
-          </div>
-          
-      
-          <p class="fz15 fw400 ff-heading mt30">MANAGE</p>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-package.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
+            <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Logout</a>
           </div>
 
         </div>
@@ -225,16 +233,25 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12 col-xxl-4">
+            <div class="col-sm-6 col-xxl-3">
               <div class="d-flex justify-content-between statistics_funfact">
                 <div class="details">
-                  <div class="text fz25">Properti</div>
+                  <div class="text fz25">Semua Properti</div>
                   <div class="title tipe1">200</div>
                 </div>
                 <div class="icon tipe1 text-center"><i class="flaticon-home"></i></div>
               </div>
             </div>
-            <div class="col-sm-6 col-xxl-4">
+            <div class="col-sm-6 col-xxl-3">
+              <div class="d-flex justify-content-between statistics_funfact">
+                <div class="details">
+                  <div class="text fz25">Properti tersewa</div>
+                  <div class="title tipe4">83</div>
+                </div>
+                <div class="icon tipe4 text-center"><i class="flaticon-keywording"></i></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xxl-3">
               <div class="d-flex justify-content-between statistics_funfact">
                 <div class="details">
                   <div class="text fz25">Owner / BUMN</div>
@@ -243,7 +260,7 @@
                 <div class="icon tipe2 text-center"><i class="flaticon-photo"></i></div>
               </div>
             </div>
-            <div class="col-sm-6 col-xxl-4">
+            <div class="col-sm-6 col-xxl-3">
               <div class="d-flex justify-content-between statistics_funfact">
                 <div class="details">
                   <div class="text fz25">Tenant / SWASTA</div>
@@ -255,17 +272,41 @@
           </div>
           <div class="row">
             <div class="col-xl-8">
-              <div class="message-alart-style1">
-                <div class="alert alart_style_one alert-dismissible fade show mb20" role="alert">
-                  Info: <br/>Status Anda saat ini adalah swasta, silahkan ajukan verifikasi jika perusahaan Anda adalah perusahaan BUMN agar bisa melakukan listing di situs ini.
-                  <br/><br/><a href="" class="ud-btn btn-dark me-4 btn-sm">Ajukan verifikasi<i class="fal fa-arrow-right-long"></i></a>
-                  <i class="far fa-xmark btn-close" data-bs-dismiss="alert" aria-label="Close"></i>
-                </div>
-              </div>
-              
 
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <h4 class="title fz17 mb20">Properti yang Anda sewa</h4>
+                <div class="navtab-style1">
+                  <div class="d-sm-flex align-items-center justify-content-between">
+                    <h4 class="title fz17 mb20">Lihat statistik</h4>
+                    <ul class="nav nav-tabs border-bottom-0 mb30" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link fw600 active" id="hourly-tab" data-bs-toggle="tab" href="#hourly" role="tab" aria-controls="hourly" aria-selected="true">Properti</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fw600" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">User</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fw600" id="monthly-tab" data-bs-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false">Transaksi</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="hourly" role="tabpanel" aria-labelledby="hourly-tab">
+                      <canvas class="chart-container" id="doublebar-chart"></canvas>
+                    </div>
+                    <div class="tab-pane fade w-100" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
+                      <canvas class="canvas w-100" id="myChartweave"></canvas>
+                    </div>
+                    <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                      <div class="chart pt20">
+                        <canvas class="w-100" id="myChart"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+                <h4 class="title fz17 mb20">Properti terbaru</h4>
               <div class="packages_table table-responsive">
                 <table class="table-style3 table at-savesearch">
                   <thead class="t-head">
@@ -327,40 +368,10 @@
                 </table>
               </div>
             </div>  
-
-
-              <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <div class="navtab-style1">
-                  <div class="d-sm-flex align-items-center justify-content-between">
-                    <h4 class="title fz17 mb20">View statistics</h4>
-                    <ul class="nav nav-tabs border-bottom-0 mb30" id="myTab" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link fw600 active" id="hourly-tab" data-bs-toggle="tab" href="#hourly" role="tab" aria-controls="hourly" aria-selected="true">Hours</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fw600" id="weekly-tab" data-bs-toggle="tab" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false">Weekly</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fw600" id="monthly-tab" data-bs-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false">Monthly</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tab-content" id="myTabContent2">
-                    <div class="tab-pane fade show active" id="hourly" role="tabpanel" aria-labelledby="hourly-tab">
-                      <canvas class="chart-container" id="doublebar-chart"></canvas>
-                    </div>
-                    <div class="tab-pane fade w-100" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
-                      <canvas class="canvas w-100" id="myChartweave"></canvas>
-                    </div>
-                    <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
-                      <div class="chart pt20">
-                        <canvas class="w-100" id="myChart"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
+
+            <!--right side-->
             <div class="col-xl-4">
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 class="title fz17 mb25">Pesan masuk</h4>
@@ -400,7 +411,7 @@
             <div class="row items-center justify-content-center justify-content-md-between">
               <div class="col-auto">
                 <div class="copyright-widget">
-                  <p class="text">© Homez - All rights reserved</p>
+                  <p class="text">© Myqpro - All rights reserved</p>
                 </div>
               </div>
               <div class="col-auto">
