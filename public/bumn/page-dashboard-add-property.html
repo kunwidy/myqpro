@@ -359,11 +359,11 @@
                 <div class="navtab-style1">
                   <nav>
                     <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                      <button class="nav-link active fw600 ms-3" id="nav-item1-tab" data-bs-toggle="tab" data-bs-target="#nav-item1" type="button" role="tab" aria-controls="nav-item1" aria-selected="true">1. Description</button>
+                      <button class="nav-link active fw600 ms-3" id="nav-item1-tab" data-bs-toggle="tab" data-bs-target="#nav-item1" type="button" role="tab" aria-controls="nav-item1" aria-selected="true">1. Deskripsi</button>
                       <button class="nav-link fw600" id="nav-item2-tab" data-bs-toggle="tab" data-bs-target="#nav-item2" type="button" role="tab" aria-controls="nav-item2" aria-selected="false">2. Media</button>
-                      <button class="nav-link fw600" id="nav-item3-tab" data-bs-toggle="tab" data-bs-target="#nav-item3" type="button" role="tab" aria-controls="nav-item3" aria-selected="false">3. Location</button>
+                      <button class="nav-link fw600" id="nav-item3-tab" data-bs-toggle="tab" data-bs-target="#nav-item3" type="button" role="tab" aria-controls="nav-item3" aria-selected="false">3. Lokasi</button>
                       <button class="nav-link fw600" id="nav-item4-tab" data-bs-toggle="tab" data-bs-target="#nav-item4" type="button" role="tab" aria-controls="nav-item4" aria-selected="false">4. Detail</button>
-                      <button class="nav-link fw600" id="nav-item5-tab" data-bs-toggle="tab" data-bs-target="#nav-item5" type="button" role="tab" aria-controls="nav-item5" aria-selected="false">5. Amenities</button>
+                      <button class="nav-link fw600" id="nav-item5-tab" data-bs-toggle="tab" data-bs-target="#nav-item5" type="button" role="tab" aria-controls="nav-item5" aria-selected="false">5. Fasilitas</button>
                     </div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
@@ -371,82 +371,61 @@
                       <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
                         <h4 class="title fz17 mb30">Property Description</h4>
                         <form class="form-style1">
+
                           <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-sm-6 col-xl-6">
+                              <div class="ui-content mb40">
+                                  <div class="form-style1">
+                                    <label class="form-label fw600 dark-color">Tipe properti</label>
+                                    <div class="bootselect-multiselect">
+                                      <select class="selectpicker" data-live-search="true" data-width="100%">
+                                        <option>Pilih tipe</option>
+                                        <option data-tokens="Tanah">Tanah</option>
+                                        <option data-tokens="Residensial">Residensial</option>
+                                        <option data-tokens="Komersial">Komersial</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6 col-xl-6">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Title</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Nama properti</label>
+                                <input type="text" class="form-control" placeholder="Nama Properti">
+                              </div>
+                            </div>
+
+                           
+                            <div class="col-sm-6 col-xl-6">
+                              <div class="ui-content mb40">
+                                <div class="mb20">
+                                  <label class="heading-color ff-heading fw600 mb10">Tipe sewa</label>
+                                  <div class="location-area">
+                                    <select class="selectpicker">
+                                      <option>Harian</option>
+                                      <option>Bulanan</option>
+                                      <option>Tahunan</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-6">
+                              <div class="mb20">
+                                <label class="heading-color ff-heading fw600 mb10">Harga sewa</label>
+                                <input type="text" class="form-control" placeholder="Harga sewa properti">
                               </div>
                             </div>
                             <div class="col-sm-12">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Description</label>
+                                <label class="heading-color ff-heading fw600 mb10">Deskripsi lebih rinci</label>
                                 <textarea cols="30" rows="5" placeholder="There are many variations of passages."></textarea>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Select Category</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>Apartments</option>
-                                    <option>Bungalow</option>
-                                    <option>Houses</option>
-                                    <option>Loft</option>
-                                    <option>Office</option>
-                                    <option>Townhome</option>
-                                    <option>Villa</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Listed in</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>All Listing</option>
-                                    <option>Active</option>
-                                    <option>Sold</option>
-                                    <option>Processing</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Property Status</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>All Cities</option>
-                                    <option>Pending</option>
-                                    <option>Processing</option>
-                                    <option>Published</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Price in $</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Yearly Tax Rate</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">After Price Label</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
                             <div class="col-md-12">
                               <div class="d-sm-flex justify-content-between">
-                                <a class="ud-btn btn-white" href="">Prev Step<i class="fal fa-arrow-right-long"></i></a>
+                                <a class="ud-btn btn-white" href="">Cancle<i class="fal fa-arrow-right-long"></i></a>
                                 <a class="ud-btn btn-dark" href="">Next Step<i class="fal fa-arrow-right-long"></i></a>
                               </div>
                             </div>
@@ -456,11 +435,11 @@
                     </div>
                     <div class="tab-pane fade" id="nav-item2" role="tabpanel" aria-labelledby="nav-item2-tab">                      
                       <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-                        <h4 class="title fz17 mb30">Upload photos of your property</h4>
+                        <h4 class="title fz17 mb30">Upload foto dan video</h4>
                         <div class="col-lg-12">
                           <div class="upload-img position-relative overflow-hidden bdrs12 text-center mb30 px-2">
                             <div class="icon mb30"><span class="flaticon-upload"></span></div>
-                            <h4 class="title fz17 mb10">Upload photos of your property</h4>
+                            <h4 class="title fz17 mb10">Upload foto properti</h4>
                             <p class="text mb25">Photos must be JPEG or PNG format and least 2048x768</p>
                             <a class="ud-btn btn-white" href="">Browse Files<i class="fal fa-arrow-right-long"></i></a>
                           </div>
@@ -479,34 +458,18 @@
                         </div>
                         <form class="form-style1">
                           <div class="row">
-                            <h4 class="title fz17 mb30">Video Option</h4>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Video from</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>Youtube</option>
-                                    <option>Facebook</option>
-                                    <option>Vimeo</option>
-                                  </select>
+                            <h4 class="title fz17 mb30">Tambahkan video</h4>
+                            
+                            <div class="col-sm-12 col-xl-12">
+                              <div class="ui-content mb40">
+                                <div class="form-style1">
+                                  <label class="form-label fw600 dark-color">Embed video dari Youtube</label>
+                                  <textarea name="text" id="textarea1" cols="30" rows="3">paste embed code disini</textarea>
                                 </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Embed Video id</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
                           </div>
                           <div class="row">
-                            <h4 class="title fz17 mb30">Virtual Tour</h4>
-                            <div class="col-sm-6 col-xl-12">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Virtual Tour</label>
-                                <input type="text" class="form-control" placeholder="Virtual Tour">
-                              </div>
-                            </div>
                             <div class="col-md-12">
                               <div class="d-sm-flex justify-content-between">
                                 <a class="ud-btn btn-white" href="">Prev Step<i class="fal fa-arrow-right-long"></i></a>
@@ -519,101 +482,99 @@
                     </div>
                     <div class="tab-pane fade" id="nav-item3" role="tabpanel" aria-labelledby="nav-item3-tab">
                       <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-                        <h4 class="title fz17 mb30">Listing Location</h4>
+                        <h4 class="title fz17 mb30">Lokasi properti</h4>
                         <form class="form-style1">
                           <div class="row">
+                            <div class="col-sm-6 col-xl-4">
+                              <div class="ui-content mb40">
+                                <div class="form-style1">
+                                    <label class="form-label fw600 dark-color">Provinsi</label>
+                                    <div class="bootselect-multiselect">
+                                    <select class="selectpicker" data-live-search="true" data-width="100%">
+                                        <option>DKI Jakarta</option>
+                                        <option data-tokens="Jawa Barat">Jawa Barat</option>
+                                        <option data-tokens="Jawa Tengah">Jawa Tengah</option>
+                                    </select>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-4">
+                              <div class="ui-content mb40">
+                                <div class="form-style1">
+                                    <label class="form-label fw600 dark-color">Kota</label>
+                                    <div class="bootselect-multiselect">
+                                    <select class="selectpicker" data-live-search="true" data-width="100%">
+                                        <option>Jakarta Timur</option>
+                                        <option data-tokens="Jakarta Pusat">Jakarta Pusat</option>
+                                        <option data-tokens="Jakarta Timur">Jakarta Timur</option>
+                                    </select>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-xl-4">
+                              <div class="ui-content mb40">
+                                <div class="form-style1">
+                                    <label class="form-label fw600 dark-color">Kelurahan</label>
+                                    <div class="bootselect-multiselect">
+                                    <select class="selectpicker" data-live-search="true" data-width="100%">
+                                        <option>Cempaka Putih</option>
+                                        <option data-tokens="Gambir">Gambir</option>
+                                        <option data-tokens="Pisangan Baru">Pisangan Baru</option>
+                                    </select>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+                           
+                              <div class="col-sm-6 col-xl-8">
+                                <div class="ui-content mb40">
+                                  <label class="heading-color ff-heading fw600 mb10">Alamat</label>
+                                  <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xl-4">
+                                <div class="ui-content mb40">
+                                  <label class="heading-color ff-heading fw600 mb10">Kode POS</label>
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+                              </div>
+                            
+                           
+
                             <div class="col-sm-12">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Address</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Country / State</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>Belgiul</option>
-                                    <option>France</option>
-                                    <option>Kewait</option>
-                                    <option>Qatar</option>
-                                    <option>Netherland</option>
-                                    <option>Germany</option>
-                                    <option>Turkey</option>
-                                    <option>UK</option>
-                                    <option>USA</option>
-                                  </select>
+                              <div class="ui-content mb40">
+                                <div class="form-style1">
+                                  <label class="heading-color ff-heading fw600 mb10">Embed Google Map</label>
+                                  <textarea name="text" id="textarea1" cols="30" rows="2">paste embed code disini</textarea>
                                 </div>
                               </div>
+
+                              <!--preview embed-->
+                              <div class="mb20 mt20">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.028209328937!2d107.6360544!3d-6.9196211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7c49266ff03%3A0x300e7d5edafe37d9!2sLASWI%20CITY!5e0!3m2!1sid!2sid!4v1691060126828!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
                             </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">City</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>California</option>
-                                    <option>Chicago</option>
-                                    <option>Los Angeles</option>
-                                    <option>Manhattan</option>
-                                    <option>New Jersey</option>
-                                    <option>New York</option>
-                                    <option>San Diego</option>
-                                    <option>San Francisco</option>
-                                    <option>Texas</option>
-                                  </select>
+
+                            <div class="col-sm-12 mt50">
+                              <div class="ui-content mb40">
+                                <div class="form-style1">
+                                  <label class="heading-color ff-heading fw600 mb10">Embed Google Street view</label>
+                                  <textarea name="text" id="textarea1" cols="30" rows="2">paste embed code disini</textarea>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Neighborhood</label>
-                                <input type="text" class="form-control" placeholder="">
+
+                              <!--preview embed-->
+                              <div class="mb20 mt20">
+                                <iframe class="h510 w-100" src="https://www.google.com/maps/embed?pb=!4v1691060446391!6m8!1m7!1s1Eaic8sb4oRKLDVLpGFnuA!2m2!1d-6.918566258558744!2d107.6316702993802!3f309.30717594370105!4f2.2767231660259313!5f0.7820865974627469"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                               </div>
                             </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Zip</label>
-                                <input type="text" class="form-control" placeholder="">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Country</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>Belgiul</option>
-                                    <option>France</option>
-                                    <option>Kewait</option>
-                                    <option>Qatar</option>
-                                    <option>Netherland</option>
-                                    <option>Germany</option>
-                                    <option>Turkey</option>
-                                    <option>UK</option>
-                                    <option>USA</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-12">
-                              <div class="mb20 mt30">
-                                <label class="heading-color ff-heading fw600 mb30">Place the listing pin on the map</label>
-                                <iframe class="h550" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
-                              </div>
-                            </div>
+
+
                           </div>
                           <div class="row">
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Latitude</label>
-                                <input type="text" class="form-control" placeholder="">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Longitude</label>
-                                <input type="text" class="form-control" placeholder="">
-                              </div>
-                            </div>
                             <div class="col-md-12">
                               <div class="d-sm-flex justify-content-between">
                                 <a class="ud-btn btn-white" href="">Prev Step<i class="fal fa-arrow-right-long"></i></a>
@@ -626,159 +587,48 @@
                     </div>
                     <div class="tab-pane fade" id="nav-item4" role="tabpanel" aria-labelledby="nav-item4-tab">
                       <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-                        <h4 class="title fz17 mb30">Listing Detail</h4>
+                        <h4 class="title fz17 mb30">Detail Properti</h4>
                         <form class="form-style1">
                           <div class="row">
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Size in ft (only numbers)</label>
+                                <label class="heading-color ff-heading fw600 mb10">Luas Tanah (angka)</label>
                                 <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Lot size in ft (only numbers)</label>
+                                <label class="heading-color ff-heading fw600 mb10">Luas Bangunan (angka)</label>
                                 <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Rooms</label>
+                                <label class="heading-color ff-heading fw600 mb10">Kamar Tidur</label>
                                 <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Bedrooms</label>
+                                <label class="heading-color ff-heading fw600 mb10">Kamar Mandi</label>
                                 <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Bathrooms</label>
+                                <label class="heading-color ff-heading fw600 mb10">Lantai</label>
                                 <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Custom ID (text)</label>
+                                <label class="heading-color ff-heading fw600 mb10">Garansi</label>
                                 <input type="text" class="form-control" placeholder="Your Name">
                               </div>
                             </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Garages</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Garage size</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Year built (numeric)</label>
-                                <input type="text" class="form-control">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Available from (date)</label>
-                                <input type="text" class="form-control" placeholder="99.aa.yyyy">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Basement</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Extra details</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Roofing</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Exterior Material</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Structure type</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>Apartments</option>
-                                    <option>Bungalow</option>
-                                    <option>Houses</option>
-                                    <option>Loft</option>
-                                    <option>Office</option>
-                                    <option>Townhome</option>
-                                    <option>Villa</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
+                            
                           </div>
                           <div class="row">
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Floors no</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>1st</option>
-                                    <option>2nd</option>
-                                    <option>3rd</option>
-                                    <option>4th</option>
-                                    <option>5th</option>
-                                    <option>6th</option>
-                                    <option>7th</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-12">
-                              <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Owner/ Agent nots (not visible on front end)</label>
-                                <textarea cols="30" rows="5" placeholder="There are many variations of passages."></textarea>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Energy Class</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>All Listing</option>
-                                    <option>Active</option>
-                                    <option>Sold</option>
-                                    <option>Processing</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                              <div class="mb30">
-                                <label class="heading-color ff-heading fw600 mb10">Energy index in kWh/m2a</label>
-                                <div class="location-area">
-                                  <select class="selectpicker" multiple>
-                                    <option>All Cities</option>
-                                    <option>Pending</option>
-                                    <option>Processing</option>
-                                    <option>Published</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
                             <div class="col-md-12">
                               <div class="d-sm-flex justify-content-between">
                                 <a class="ud-btn btn-white" href="">Prev Step<i class="fal fa-arrow-right-long"></i></a>
@@ -791,7 +641,7 @@
                     </div>
                     <div class="tab-pane fade" id="nav-item5" role="tabpanel" aria-labelledby="nav-item5-tab">
                       <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-                        <h4 class="title fz17 mb30">Select Amenities</h4>
+                        <h4 class="title fz17 mb30">Pilih Fasilitas</h4>
                         <div class="row">
                           <div class="col-sm-6 col-lg-3 col-xxl-2">
                             <div class="checkbox-style1">
