@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="advanced search, agency, agent, classified, directory, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental">
-<meta name="description" content="Homez - Real Estate HTML Template">
+<meta name="description" content="MyQpro app v.1.0">
 <meta name="CreativeLayers" content="ATFN">
 <!-- css file -->images
 <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
@@ -64,13 +64,13 @@
                 <!-- Responsive Menu Structure-->
                 <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
                   <li class="visible_list"> 
-                    <a class="list-item" href="home.html"><span class="title">Home</span></a>
+                    <a class="list-item" href="home.html"><span class="title">Beranda</span></a>
                   </li>
                   <li class="visible_list"> 
-                    <a class="list-item" href="list-property.html"><span class="title">Property</span></a>
+                    <a class="list-item" href="list-property.html"><span class="title">Properti</span></a>
                   </li>
                   <li class="visible_list"> 
-                    <a class="list-item" href="list-news.html"><span class="title">News</span></a>
+                    <a class="list-item" href="list-news.html"><span class="title">Info</span></a>
                   </li>
                 </ul>
               </div>
@@ -93,17 +93,15 @@
                       </a>
                       <div class="dropdown-menu">
                         <div class="user_setting_content">
-                          <p class="fz15 fw400 ff-heading mb20">MAIN</p>
                           <a class="dropdown-item active" href="page-dashboard.html"><i class="flaticon-discovery mr10"></i>Dashboard</a>
-                          <a class="dropdown-item" href="page-dashboard-message.html"><i class="flaticon-chat-1 mr10"></i>Message</a>
-                          <p class="fz15 fw400 ff-heading mt30">MANAGE LISTINGS</p>
-                          <a class="dropdown-item" href="page-dashboard-add-property.html"><i class="flaticon-new-tab mr10"></i>Add New Property</a>
-                          <a class="dropdown-item" href="page-dashboard-order.html"><i class="flaticon-home mr10"></i>My Properties</a>
-                          <a class="dropdown-item" href="page-dashboard-favorites.html"><i class="flaticon-like mr10"></i>My Favorites</a>
-                          <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
-                          <a class="dropdown-item" href="page-dashboard-package.html"><i class="flaticon-protection mr10"></i>Settings</a>
-                          <a class="dropdown-item" href="page-dashboard-profile.html"><i class="flaticon-user mr10"></i>My Profile</a>
-                          <a class="dropdown-item" href="page-login.html"><i class="flaticon-exit mr10"></i>Logout</a>
+                          <p class="fz15 fw400 ff-heading mt30">KELOLA PROPERTI</p>
+                          <a class="dropdown-item" href="page-dashboard-order.html"><i class="flaticon-home mr10"></i>Properti saya</a>
+                          <a class="dropdown-item" href="page-dashboard-favorites.html"><i class="flaticon-like mr10"></i>Properti favorit</a>
+                          <a class="dropdown-item" href="page-dashboard-add-property.html"><i class="flaticon-new-tab mr10"></i>Daftarkan properti</a>
+                          <p class="fz15 fw400 ff-heading mt30">KELOLA AKUN</p>
+                          <a class="dropdown-item" href="page-dashboard-profile.html"><i class="flaticon-user mr10"></i>Lihat profil</a>
+                          <a class="dropdown-item" href="edit-profile.html"><i class="flaticon-settings mr10"></i>Pengaturan</a>
+                          <a class="dropdown-item" href="../../page-login.html"><i class="flaticon-exit mr10"></i>Keluar</a>
                         </div>
                       </div>
                     </div>
@@ -127,7 +125,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="../../assets/images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="../../assets/images/header-logo2.svg" alt=""></a>
-            <a href="page-login.html"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href="page-agency-single.html"><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -135,27 +133,26 @@
     <!-- /.mobile-menu -->
     <nav id="menu" class="">
       <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="list-property.html">Property</a></li>
-        <li><a href="list-news.html">News</a></li>
-        <li><span>Manage property</span>
+        <li><a href="home.html">Beranda</a></li>
+        <li><a href="list-property.html">Properti</a></li>
+        <li><a href="list-news.html">Info</a></li>
+        <li><span>Kelola properti</span>
           <ul>
             <li><a href="page-dashboard.html">Dashboard</a></li>
-            <li><a href="page-dashboard-message.html">Message</a></li>
-            <li><a href="page-dashboard-add-property.html">Add New Property</a></li>
-            <li><a href="page-dashboard-properties.html">My Properties</a></li>
-            <li><a href="page-dashboard-favorites.html">My Favorites</a></li>
-            <li><a href="page-agency-single.html">My Profile</a></li>
+            <li><a href="page-dashboard-properties.html">Properti saya</a></li>
+            <li><a href="page-dashboard-favorites.html">Properti Favorit</a></li>
+            <li><a href="page-dashboard-add-property.html">Daftarkan properti</a></li>
           </ul>
         </li>
-        <li><span>Settings</span>
+        <li><span>Kelola akun</span>
           <ul>
-            <li><a href="edit-profile.html">Edit profile</a></li>
+            <li><a href="page-agency-single.html">Profil saya</a></li>
+            <li><a href="edit-profile.html">Pengaturan</a></li>
           </ul>
         </li>
         
         <li class="px-3 mobile-menu-btn">
-          <a href="page-dashboard-add-property.html" class="ud-btn btn-thm text-white">Submit Property<i class="fal fa-arrow-right-long"></i></a>
+          <a href="../../page-login.html" class="ud-btn btn-thm text-white">Keluar<i class="fal fa-arrow-right-long"></i></a>
         </li>
         <!-- Only for Mobile View -->
       </ul>
@@ -169,28 +166,28 @@
           <div class="sidebar_list_item">
             <a href="page-dashboard.html" class="items-center"><i class="flaticon-discovery mr15"></i>Dashboard</a>
           </div>
+          <p class="fz15 fw400 ff-heading mt30">KELOLA PROPERTI</p>
           <div class="sidebar_list_item ">
-            <a href="page-dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Message</a>
-          </div>
-          <p class="fz15 fw400 ff-heading mt30">MANAGE LISTINGS</p>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-add-property.html" class="items-center"><i class="flaticon-new-tab mr15"></i>Add New Property</a>
+            <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>Properti saya</a>
           </div>
           <div class="sidebar_list_item ">
-            <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>My Properties</a>
+            <a href="page-dashboard-favorites.html" class="items-center -is-active"><i class="flaticon-like mr15"></i>Properti favorit</a>
           </div>
           <div class="sidebar_list_item ">
-            <a href="page-dashboard-favorites.html" class="items-center -is-active"><i class="flaticon-like mr15"></i>My Favorites</a>
+            <a href="page-dashboard-add-property.html" class="items-center"><i class="flaticon-new-tab mr15"></i>Daftarkan properti</a>
           </div>
-          <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
-          <div class="sidebar_list_item ">
-            <a href="edit-profile.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
-          </div>
+          
+      
+          <p class="fz15 fw400 ff-heading mt30">KELOLA AKUN</p>
           <div class="sidebar_list_item ">
             <a href="page-agency-single.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
           </div>
           <div class="sidebar_list_item ">
-            <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Logout</a>
+            <a href="edit-profile.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
+          </div>
+  
+          <div class="sidebar_list_item ">
+            <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Keluar</a>
           </div>
         </div>
       </div>
@@ -202,26 +199,23 @@
                 <div class="dropdown">
                   <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars pr10"></i> Dashboard Navigation</button>
                   <ul id="myDropdown" class="dropdown-content">
-                    <li><a href="page-dashboard.html"><i class="flaticon-discovery mr10"></i>Dashboard</a></li>
-                    <li><a href="page-dashboard-message.html"><i class="flaticon-chat-1 mr10"></i>Message</a></li>
-                    <li><p class="fz15 fw400 ff-heading mt30 pl30">MANAGE LISTINGS</p></li>
-                    <li><a href="page-dashboard-add-property.html"><i class="flaticon-new-tab mr10"></i>Add New Property</a></li>
-                    <li><a href="page-dashboard-properties.html"><i class="flaticon-home mr10"></i>My Properties</a></li>
-                    <li class="active"><a href="page-dashboard-favorites.html"><i class="flaticon-like mr10"></i>My Favorites</a></li>
-                    <li><a href="page-dashboard-savesearch.html"><i class="flaticon-search-2 mr10"></i>Saved Search</a></li>
-                    <li><a href="page-dashboard-review.html"><i class="flaticon-review mr10"></i>Reviews</a></li>
-                    <li><p class="fz15 fw400 ff-heading mt30 pl30">MANAGE ACCOUNT</p></li>
-                    <li><a href="page-dashboard-package.html"><i class="flaticon-protection mr10"></i>My Package</a></li>
-                    <li><a href="page-dashboard-profile.html"><i class="flaticon-user mr10"></i>My Profile</a></li>
-                    <li><a href="page-login.html"><i class="flaticon-exit mr10"></i>Logout</a></li>
+                    <li class="active"><a href="page-dashboard.html" class="items-center -is-active"><i class="flaticon-discovery mr15"></i>Dashboard</a></li>
+                    <li><p class="fz15 fw400 ff-heading mt30 pl30">KELOLA PROPERTI</p></li>
+                    <li><a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>Properti saya</a></li>
+                    <li><a href="page-dashboard-favorites.html" class="items-center"><i class="flaticon-like mr15"></i>Properti favorit</a></li>
+                    <li><a href="page-dashboard-add-property.html" class="items-center"><i class="flaticon-new-tab mr15"></i>Daftarkan properti</a></li>
+                    <li><p class="fz15 fw400 ff-heading mt30 pl30">KELOLA AKUN</p></li>
+                    <li><a href="page-agency-single.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a></li>
+                    <li><a href="edit-profile.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a></li>
+                    <li><a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Keluar</a></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="dashboard_title_area">
-                <h2>My Favorites</h2>
-                <p class="text">We are glad to see you again!</p>
+                <h2>Properti Favorit</h2>
+                <p class="text">Berikut daftar properti yang Anda sukai</p>
               </div>
             </div>
           </div>
@@ -478,7 +472,7 @@
             <div class="row items-center justify-content-center justify-content-md-between">
               <div class="col-auto">
                 <div class="copyright-widget">
-                  <p class="text">© Homez - All rights reserved</p>
+                  <p class="text">© MYQPRO - All rights reserved</p>
                 </div>
               </div>
               <div class="col-auto">
