@@ -227,10 +227,10 @@
               <a href="page-dashboard-master.html" class="items-center"><i class="flaticon-ruler mr15"></i>Master Properti</a>
             </div>
             <div class="sidebar_list_item ">
-              <a href="page-dashboard-owner.html" class="items-center"><i class="flaticon-security mr15"></i>Master Owner</a>
+                <a href="page-dashboard-owner.html" class="items-center -is-active"><i class="flaticon-security mr15"></i>Master Owner</a>
             </div>
             <div class="sidebar_list_item ">
-              <a href="page-dashboard-add-user.html" class="items-center -is-active"><i class="flaticon-photo mr15"></i>Tambah User</a>
+              <a href="page-dashboard-add-user.html" class="items-center"><i class="flaticon-photo mr15"></i>Tambah User</a>
             </div>
   
   
@@ -283,163 +283,160 @@
           <div class="row align-items-center pb40">
             <div class="col-xxl-3">
               <div class="dashboard_title_area">
-                <h2>Tambah User</h2>
-                <p class="text">Lengkapi form di bawah ini</p>
+                <h2>Daftar Owner</h2>
+                <p class="text">pada : 27 Agustus 2023</p>
               </div>
             </div>
             <div class="col-xxl-9">
               <div class="dashboard_search_meta d-md-flex align-items-center justify-content-xxl-end">
-                <a href="page-dashboard-user.html" class="ud-btn btn-thm"><i class="fal fa-arrow-left-long"></i> Lihat semua user</a>
+                <div class="item1 mb15-sm">
+                  <div class="search_area">
+                    <input type="text" class="form-control bdrs12" placeholder="Search">
+                    <label><span class="flaticon-search"></span></label>
+                  </div>
+                </div>
+                <div class="page_control_shorting bdr1 bdrs12 py-2 ps-3 pe-2 mx-1 mx-xxl-3 bgc-white mb15-sm maxw140">
+                  <div class="pcs_dropdown d-flex align-items-center"><span class="title-color">Sort by:</span>
+                    <select class="selectpicker show-tick">
+                      <option>All</option>
+                      <option>BUMN</option>
+                      <option>PEMDA</option>
+                      <option>SWASTA</option>
+                    </select>
+                  </div>
+                </div>
+                <a href="page-dashboard-user.html" class="ud-btn btn-thm">Lihat user<i class="fal fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xl-12">
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <!--form start-->
-                <div class="col-xl-7">
-                    <div class="profile-box position-relative d-md-flex align-items-end mb50">
-                        <div class="profile-img position-relative overflow-hidden bdrs12 mb20-sm">
-                        <img class="w-100" src="../../assets/images/listings/profile-1.jpg" alt="">
-                        <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete Image" aria-label="Delete Item"><span class="fas fa-trash-can"></span></a>
-                        </div>
-                        <div class="profile-content ml30 ml0-sm">
-                        <a href="" class="ud-btn btn-white2 mb30">Upload Profile Files<i class="fal fa-arrow-right-long"></i></a>
-                        <p class="text">Photos must be JPEG or PNG format and least 240x240</p>
+
+                <div class="row">
+                    <div class="col-md-6 bgc-f7 p30">
+                        <h4 class="title fz17 mb30">Tambahkan Owner :</h4>
+                        <form class="form-style1">
+                            <div class="mb20">
+                                <label class="heading-color ff-heading fw600 mb10">*Nama owner</label>
+                                <input type="text" class="form-control" placeholder="Nama Owner">
+                            </div>
+                            <div class="text-end">
+                                <a class="ud-btn btn-dark" href="#">Tambahkan<i class="fal fa-arrow-right-long"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 p30">
+                        <h4 class="title fz17 mb30">Daftar Owner</h4>
+                        <div class="table-style1 table-responsive mb-4 mb-lg-5">
+                            <table class="table table-borderless table-style3">
+                                <thead class="thead-light">
+                                    <tr>
+                                      <th class="fz15 fw500" scope="col">ID</th>
+                                      <th class="fz15 fw500" scope="col">Nama Owner</th>
+                                      <th class="fz15 fw500 text-center" scope="col">Jumlah</th>
+                                      <th class="fz15 fw500 text-end" scope="col">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>own-01</td>
+                                        <td>BUMN</td>
+                                        <td class="text-center">0</td>
+                                        <td class="vam text-end">
+                                            <div class="d-flex justify-content-end">
+                                              <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
+                                              <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>own-02</td>
+                                        <td>PEMPROV</td>
+                                        <td class="text-center">0</td>
+                                        <td class="vam text-end">
+                                            <div class="d-flex justify-content-end">
+                                              <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
+                                              <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>own-03</td>
+                                        <td>PEMDA</td>
+                                        <td class="text-center">0</td>
+                                        <td class="vam text-end">
+                                            <div class="d-flex justify-content-end">
+                                              <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
+                                              <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>own-04</td>
+                                        <td>PEMKOT</td>
+                                        <td class="text-center">0</td>
+                                        <td class="vam text-end">
+                                            <div class="d-flex justify-content-end">
+                                              <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
+                                              <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>own-05</td>
+                                        <td>Universitas</td>
+                                        <td class="text-center">0</td>
+                                        <td class="vam text-end">
+                                            <div class="d-flex justify-content-end">
+                                              <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
+                                              <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <form class="form-style1">
-                        <div class="row mb-4">
-                            <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*Nama Perusahaan</label>
-                                  <input type="text" class="form-control" placeholder="Your Company Name">
-                                </div>
-                              </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*Email</label>
-                                  <input type="email" class="form-control" placeholder="Your email">
-                                </div>
-                              </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*No telepon / WA</label>
-                                  <input type="text" class="form-control" placeholder="Your Phone">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 col-xl-4">
-                                <div class="ui-content mb40">
-                                    <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Provinsi</label>
-                                      <div class="bootselect-multiselect">
-                                        <select class="selectpicker" data-live-search="true" data-width="100%">
-                                          <option>Search</option>
-                                          <option data-tokens="Jawa Barat">Jawa Barat</option>
-                                          <option data-tokens="Jawa Tengah">Jawa Tengah</option>
-                                          <option data-tokens="DKI Jakarta">DKI Jakarta</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-xl-4">
-                                <div class="ui-content mb40">
-                                    <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Kota/Kabupaten</label>
-                                      <div class="bootselect-multiselect">
-                                        <select class="selectpicker" data-live-search="true" data-width="100%">
-                                          <option>Search</option>
-                                          <option data-tokens="Kota Bandung">Kota Bandung</option>
-                                          <option data-tokens="Cimahi">Cimahi</option>
-                                          <option data-tokens="KBB">KBB</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="ui-content mb40">
-                                    <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Kecamatan</label>
-                                      <div class="bootselect-multiselect">
-                                        <select class="selectpicker" data-live-search="true" data-width="100%">
-                                          <option>Search</option>
-                                          <option data-tokens="Cicaheum">Cicaheum</option>
-                                          <option data-tokens="Andir">Andir</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-md-12 mb-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">Alamat</label>
-                                  <input type="text" class="form-control" placeholder="Alamat">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="mb10">
-                                  <label class="heading-color ff-heading fw600 mb10">Tentang Perusahaan</label>
-                                  <textarea cols="30" rows="4" placeholder="There are many variations of passages."></textarea>
-                                </div>
-                              </div>
-                        </div>
-
-                        <div class="row">
-                            <h4 class="title fz17 mb30">Role & Password</h4>
-                            <div class="col-sm-6 col-xl-4">
-                                <div class="ui-content mb40">
-                                    <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Tipe user</label>
-                                      <div class="bootselect-multiselect">
-                                        <select class="selectpicker" data-live-search="true" data-width="100%">
-                                          <option>Pilih</option>
-                                          <option data-tokens="Administrator">Admin</option>
-                                          <option data-tokens="BUMN">Owner</option>
-                                          <option data-tokens="PEMDA">Tenant</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*Password</label>
-                                  <input type="password" class="form-control" placeholder="Password">
-                                </div>
-                              </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*Ulangi Password</label>
-                                  <input type="password" class="form-control" placeholder="Ulangi password">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="text-end">
-                              <a class="ud-btn btn-dark" href="page-dashboard-user.html">Buat user<i class="fal fa-arrow-right-long"></i></a>
-                            </div>
-                          </div>
-                    </form>
-                </div>
-                <!--form end-->
+                
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel">Edit owner</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="log-reg-form">
+                    <div class="form-style1">
+                      <div class="mb25">
+                        <label class="form-label fw600 dark-color">Nama Owner</label>
+                        <input type="text" class="form-control" value="BUMN">
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn ud-btn btn-thm" data-bs-dismiss="modal">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         <footer class="dashboard_footer pt30 pb10">
           <div class="container">
             <div class="row items-center justify-content-center justify-content-md-between">
               <div class="col-auto">
                 <div class="copyright-widget">
-                  <p class="text">© Myqpro - All rights reserved</p>
+                  <p class="text">© 2023 MYQPRO - All rights reserved</p>
                 </div>
               </div>
               <div class="col-auto">
