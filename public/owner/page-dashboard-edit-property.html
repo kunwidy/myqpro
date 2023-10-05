@@ -292,29 +292,28 @@
           <div class="sidebar_list_item">
             <a href="page-dashboard.html" class="items-center"><i class="flaticon-discovery mr15"></i>Dashboard</a>
           </div>
+          <p class="fz15 fw400 ff-heading mt30">KELOLA PROPERTI</p>
           <div class="sidebar_list_item ">
-            <a href="page-dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Message</a>
+            <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>Properti saya</a>
           </div>
+          <div class="sidebar_list_item ">
+            <a href="page-dashboard-favorites.html" class="items-center"><i class="flaticon-like mr15"></i>Properti favorit</a>
+          </div>
+          <div class="sidebar_list_item ">
+            <a href="page-dashboard-add-property.html" class="items-center"><i class="flaticon-new-tab mr15"></i>Daftarkan properti</a>
+          </div>
+          
+      
+          <p class="fz15 fw400 ff-heading mt30">KELOLA AKUN</p>
           <div class="sidebar_list_item ">
             <a href="page-agency-single.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
           </div>
-          <p class="fz15 fw400 ff-heading mt30">MANAGE LISTINGS</p>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-add-property.html" class="items-center -is-active"><i class="flaticon-new-tab mr15"></i>Add New Property</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>My Properties</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-favorites.html" class="items-center"><i class="flaticon-like mr15"></i>My Favorites</a>
-          </div>
-          <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
           <div class="sidebar_list_item ">
             <a href="edit-profile.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
           </div>
-         
+  
           <div class="sidebar_list_item ">
-            <a href="../../page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Logout</a>
+            <a href="../../page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Keluar</a>
           </div>
         </div>
       </div>
@@ -382,11 +381,8 @@
                                   <div class="form-style1">
                                     <label class="form-label fw600 dark-color">Tipe properti</label>
                                     <div class="bootselect-multiselect">
-                                      <select class="selectpicker" data-live-search="true" data-width="100%">
-                                        <option>Pilih tipe</option>
-                                        <option data-tokens="Tanah">Tanah</option>
-                                        <option data-tokens="Residensial">Residensial</option>
-                                        <option data-tokens="Komersial">Komersial</option>
+                                      <select class="selectpicker" data-live-search="true" data-width="100%" disabled>
+                                        <option>Residensial</option>
                                       </select>
                                     </div>
                                   </div>
@@ -396,7 +392,7 @@
                             <div class="col-sm-6 col-xl-6">
                               <div class="mb20">
                                 <label class="heading-color ff-heading fw600 mb10">Nama properti</label>
-                                <input type="text" class="form-control" placeholder="Nama Properti">
+                                <input type="text" class="form-control" value="Rumah di perum Dharma Husada">
                               </div>
                             </div>
 
@@ -407,9 +403,9 @@
                                   <label class="heading-color ff-heading fw600 mb10">Tipe sewa</label>
                                   <div class="location-area">
                                     <select class="selectpicker">
-                                      <option>Harian</option>
-                                      <option>Bulanan</option>
+                                      <option value="2">Bulanan</option>
                                       <option>Tahunan</option>
+                                      <option>Harian</option>
                                     </select>
                                   </div>
                                 </div>
@@ -417,14 +413,14 @@
                             </div>
                             <div class="col-sm-6 col-xl-6">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Harga sewa</label>
-                                <input type="text" class="form-control" placeholder="Harga sewa properti">
+                                <label class="heading-color ff-heading fw600 mb10">Harga sewa (Rp.)</label>
+                                <input type="text" class="form-control" value="1000.000">
                               </div>
                             </div>
                             <div class="col-sm-12">
                               <div class="mb20">
                                 <label class="heading-color ff-heading fw600 mb10">Deskripsi lebih rinci</label>
-                                <textarea cols="30" rows="5" placeholder="There are many variations of passages."></textarea>
+                                <textarea cols="30" rows="5">Rumah 1 lantai dengan pengsui yang ciamik soro</textarea>
                               </div>
                             </div>
                             <div class="col-md-12">
@@ -593,38 +589,38 @@
                           <div class="row">
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Luas Tanah (angka)</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Luas Tanah (m<sup>2</sup>)</label>
+                                <input type="text" class="form-control" value="200">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Luas Bangunan (angka)</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Luas Bangunan (m<sup>2</sup>)</label>
+                                <input type="text" class="form-control" value="400">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Kamar Tidur</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Jumlah Kamar Tidur</label>
+                                <input type="text" class="form-control" value="3">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Kamar Mandi</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Jumlah Kamar Mandi</label>
+                                <input type="text" class="form-control" value="3">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Lantai</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Jumlah Lantai</label>
+                                <input type="text" class="form-control" value="1">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Garansi</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Garasi</label>
+                                <input type="text" class="form-control" value="2 mobil">
                               </div>
                             </div>
                             
@@ -753,7 +749,7 @@
                         <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
                           <h4 class="title fz17 mb30">Status Properti</h4>
                           <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="radiobox-style1">
                                     <div class="radio-element">
                                       <div class="form-check d-flex align-items-center mb15">
@@ -784,27 +780,12 @@
                                           <option>cari nama perusahaan</option>
                                           <option data-tokens="PT PLN">PT PLN</option>
                                           <option data-tokens="PT BUYUNG UPIK">PT BUYUNG UPIK</option>
-                                          <option data-tokens="PT QUADRAN ENERGI">PT QUADRAN ENERG</option>
+                                          <option data-tokens="PT QUADRAN ENERGI">PT QUADRAN ENERGI</option>
                                         </select>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="cta-agent bgc-dark mx-auto maxw1600 pt20 pb20 bdrs12 position-relative mx20-lg">
-                                      <div class="agent-single d-sm-flex align-items-center">
-                                          <div class="single-img mb30-sm ml20">
-                                            <img src="../../assets/images/team/agency-single-1.png" alt="">
-                                          </div>
-                                          <div class="single-contant ml30 ml0-xs">
-                                            <h2 class="title mb-0 text-white">PT PLN</h2>
-                                            <p class="fz15 text-white">Jalan Trunojoyo Blok MI No 135 Kebayoran Baru, Jakarta</p>
-                                            <div class="agent-meta mb15 d-md-flex align-items-center">
-                                              <a class="text text-white fz15 pe-2 bdrr1" href=""><i class="fas fa-star fz10 review-color2 pr10"></i>BUMN</a>
-                                              <a class="text text-white fz15 pe-2 ps-2 bdrr1" href=""><i class="flaticon-email pe-1"></i>halo@pln.co.id</a>
-                                              <a class="text text-white fz15 ps-2" href=""><i class="flaticon-smartphone pe-1"></i>+848 032 03 01</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                  </div>
+                                  
                                   <div class="ui-content mb40 mt20">
                                       <div class="form-style1">
                                           <label class="form-label fw600 dark-color">Durasi kontrak (Hr/Bln/Thn)</label>
