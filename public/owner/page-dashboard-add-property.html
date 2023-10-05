@@ -232,12 +232,16 @@
                       <button class="nav-link fw600" id="nav-item3-tab" data-bs-toggle="tab" data-bs-target="#nav-item3" type="button" role="tab" aria-controls="nav-item3" aria-selected="false">3. Lokasi</button>
                       <button class="nav-link fw600" id="nav-item4-tab" data-bs-toggle="tab" data-bs-target="#nav-item4" type="button" role="tab" aria-controls="nav-item4" aria-selected="false">4. Detail</button>
                       <button class="nav-link fw600" id="nav-item5-tab" data-bs-toggle="tab" data-bs-target="#nav-item5" type="button" role="tab" aria-controls="nav-item5" aria-selected="false">5. Fasilitas</button>
-                      <button class="nav-link fw600" id="nav-item6-tab" data-bs-toggle="tab" data-bs-target="#nav-item6" type="button" role="tab" aria-controls="nav-item5" aria-selected="false">6. Status</button>
                     </div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-item1" role="tabpanel" aria-labelledby="nav-item1-tab">
                       <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
+                        Klik tombol dibawah ini, dan tentukan tipe properti yang akan dibuat:
+                        <div class="d-sm-flex justify-content-start mt-2">
+                          <a href="#typModal" data-bs-toggle="modal" data-bs-target="#typModal" class="ud-btn btn-dark">Pilih kategori<i class="fal fa-arrow-right-long"></i></a>
+                        </div>
+                        <hr>
                         <h4 class="title fz17 mb30">Property Description</h4>
                         <form class="form-style1">
 
@@ -461,38 +465,38 @@
                           <div class="row">
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Luas Tanah (angka)</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Luas Tanah (m<sup>2</sup>)</label>
+                                <input type="text" class="form-control" placeholder="100">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Luas Bangunan (angka)</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Luas Bangunan (m<sup>2</sup>)</label>
+                                <input type="text" class="form-control" placeholder="100">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
                                 <label class="heading-color ff-heading fw600 mb10">Kamar Tidur</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="2">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
                                 <label class="heading-color ff-heading fw600 mb10">Kamar Mandi</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="2">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
                                 <label class="heading-color ff-heading fw600 mb10">Lantai</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="1">
                               </div>
                             </div>
                             <div class="col-sm-6 col-xl-4">
                               <div class="mb20">
-                                <label class="heading-color ff-heading fw600 mb10">Garansi</label>
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <label class="heading-color ff-heading fw600 mb10">Garasi</label>
+                                <input type="text" class="form-control" placeholder="1 mobil">
                               </div>
                             </div>
                             
@@ -611,48 +615,12 @@
                           <div class="col-md-12 mt30">
                             <div class="d-sm-flex justify-content-between">
                               <a class="ud-btn btn-white" href="">Prev Step<i class="fal fa-arrow-right-long"></i></a>
-                              <a class="ud-btn btn-dark" href="">Next Step<i class="fal fa-arrow-right-long"></i></a>
+                              <a href="#subModal" data-bs-toggle="modal" data-bs-target="#subModal" class="ud-btn btn-dark" href="">Submit properti<i class="fal fa-arrow-right-long"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
-                    <div class="tab-pane fade" id="nav-item6" role="tabpanel" aria-labelledby="nav-item6-tab">
-                      <div class="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-                        <h4 class="title fz17 mb30">Status Properti</h4>
-                        <div class="row">
-                          <div class="col-lg-12">
-                            <div class="radiobox-style1">
-                              <div class="radio-element">
-                                <div class="form-check d-flex align-items-center mb15">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                  <label class="form-check-label" for="flexRadioDefault1">Pending!</label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mb15">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                  <label class="form-check-label text-info" for="flexRadioDefault2">Publish!</label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mb15">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                  <label class="form-check-label text-danger" for="flexRadioDefault3">Booking</label>
-                                </div>
-                                <div class="form-check d-flex align-items-center">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
-                                  <label class="form-check-label text-success" for="flexRadioDefault4">Sedang disewa!</label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mt30">
-                            <div class="d-sm-flex justify-content-end">
-                              <a class="ud-btn btn-thm" href="page-dashboard-properties.html">Submit Property<i class="fal fa-arrow-right-long"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
 
                   </div>
                 </div>
@@ -660,6 +628,85 @@
             </div>
           </div>
         </div>
+
+        <!-- Modal  Select type -->
+        <div class="modal fade" id="typModal" tabindex="-1" aria-labelledby="typModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-5" id="typModalLabel">Pilih tipe properti</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="log-reg-form">
+                  <div class="form-style1">
+                    <div class="radiobox-style1">
+                      <div class="radio-element">
+                        <div class="form-check d-flex align-items-center mb15">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">Tanah</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb15">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">Residensial</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb15">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">Komersial</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb15">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">Ruang serbaguna</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb15">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">Advertising</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn ud-btn btn-thm">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Modal -->
+         <div class="modal fade" id="subModal" tabindex="-1" aria-labelledby="subModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-5" id="subModalLabel">Submit properti terbaru</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="log-reg-form">
+                  <div class="form-style1">
+                    <div class="radiobox-style1">
+                      <div class="radio-element">
+                        <div class="form-check d-flex align-items-center mb15">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">Pending!</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb15">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label text-info" for="flexRadioDefault2">Publish!</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn ud-btn btn-thm">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <footer class="dashboard_footer pt30 pb10">
           <div class="container">
             <div class="row items-center justify-content-center justify-content-md-between">
