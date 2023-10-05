@@ -373,12 +373,59 @@
                 <h4 class="title fz17 mb25">Ajukan verfikasi</h4>
                 <p><strong>Saat ini Anda hanya bisa menyewa properti.</strong> Properti yang terdaftar disini merupakan asset Pemerintah, agar dapat mendaftarkan properti untuk disewakan, silahkan lakukan verifikasi terlebih dahulu.</p>
                 <div class="d-grid">
-                  <a href="" class="ud-btn btn-white2">Ajukan verfikasi<i class="fal fa-arrow-right-long"></i></a>
+                  <a href="#subModal" data-bs-toggle="modal" data-bs-target="#subModal" class="ud-btn btn-white2">Ajukan verfikasi<i class="fal fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="subModal" tabindex="-1" aria-labelledby="subModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-5" id="subModalLabel">Verifikasi akun</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="log-reg-form">
+                  <p>Lengkapi form di bawah ini</p>
+                  <div class="form-style1">
+                    <div class="mb20">
+                      <label class="heading-color ff-heading fw600 mb10">Nama lengkap</label>
+                      <input type="text" class="form-control" placeholder="Nama Lengkap">
+                    </div>
+                    <div class="mb20">
+                      <label class="heading-color ff-heading fw600 mb10">Email</label>
+                      <input type="text" class="form-control" placeholder="Email lembaga Anda">
+                      <small>Wajib menggunakan email korporat</small>
+                    </div>
+                    <div class="ui-content mb40">
+                      <div class="form-style1">
+                          <label class="form-label fw600 dark-color">Lembaga</label>
+                          <div class="bootselect-multiselect">
+                          <select class="selectpicker" data-live-search="true" data-width="100%">
+                              <option>BUMN</option>
+                              <option data-tokens="Jawa Barat">PEMPROV</option>
+                              <option data-tokens="Jawa Tengah">PEMKOT</option>
+                              <option data-tokens="Jawa Tengah">PEMDA</option>
+                              <option data-tokens="Jawa Tengah">Universitas</option>
+                          </select>
+                          </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn ud-btn btn-thm">Verifikasi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <footer class="dashboard_footer pt30 pb10">
           <div class="container">
             <div class="row items-center justify-content-center justify-content-md-between">
