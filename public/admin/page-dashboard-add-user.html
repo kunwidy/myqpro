@@ -244,10 +244,10 @@
         
             <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
             <div class="sidebar_list_item ">
-              <a href="edit-profile.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
+              <a href="settings-app.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
             </div>
             <div class="sidebar_list_item ">
-              <a href="page-agency-single.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
+              <a href="edit-profile.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
             </div>
             <div class="sidebar_list_item ">
               <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Logout</a>
@@ -312,72 +312,60 @@
                 <div class="col-lg-12">
                     <form class="form-style1">
                         <div class="row mb-4">
-                            <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*Nama Perusahaan</label>
-                                  <input type="text" class="form-control" placeholder="Your Company Name">
-                                </div>
-                              </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*Email</label>
-                                  <input type="email" class="form-control" placeholder="Your email">
-                                </div>
-                              </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="mb20">
-                                  <label class="heading-color ff-heading fw600 mb10">*No telepon / WA</label>
-                                  <input type="text" class="form-control" placeholder="Your Phone">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 col-xl-4">
-                                <div class="ui-content mb40">
-                                    <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Provinsi</label>
-                                      <div class="bootselect-multiselect">
-                                        <select class="selectpicker" data-live-search="true" data-width="100%">
-                                          <option>Search</option>
-                                          <option data-tokens="Jawa Barat">Jawa Barat</option>
-                                          <option data-tokens="Jawa Tengah">Jawa Tengah</option>
-                                          <option data-tokens="DKI Jakarta">DKI Jakarta</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                </div>
+                          <div class="col-sm-6 col-xl-8">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">Nama Perusahaan*</label>
+                              <input type="text" class="form-control" placeholder="Nama perusahaan">
                             </div>
-                            <div class="col-sm-6 col-xl-4">
-                                <div class="ui-content mb40">
-                                    <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Kota/Kabupaten</label>
-                                      <div class="bootselect-multiselect">
-                                        <select class="selectpicker" data-live-search="true" data-width="100%">
-                                          <option>Search</option>
-                                          <option data-tokens="Kota Bandung">Kota Bandung</option>
-                                          <option data-tokens="Cimahi">Cimahi</option>
-                                          <option data-tokens="KBB">KBB</option>
-                                        </select>
-                                      </div>
-                                    </div>
+                          </div>
+
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="ui-content mb40">
+                              <div class="form-style1">
+                                <label class="form-label fw600 dark-color">Lembaga</label>
+                                <div class="bootselect-multiselect">
+                                  <select class="selectpicker" data-live-search="true" data-width="100%">
+                                    <option>Search</option>
+                                    <option data-tokens="BUMN">BUMN</option>
+                                    <option data-tokens="Pemprov">PEMPROV</option>
+                                    <option data-tokens="Pemkot">PEMKOT</option>
+                                    <option data-tokens="Pemkot">PEMDA</option>
+                                    <option data-tokens="Pemkot">Universitas</option>
+                                  </select>
                                 </div>
                               </div>
-                              <div class="col-sm-6 col-xl-4">
-                                <div class="ui-content mb40">
-                                    <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Kecamatan</label>
-                                      <div class="bootselect-multiselect">
-                                        <select class="selectpicker" data-live-search="true" data-width="100%">
-                                          <option>Search</option>
-                                          <option data-tokens="Cicaheum">Cicaheum</option>
-                                          <option data-tokens="Andir">Andir</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                </div>
-                              </div>
+                          </div>
+                          </div>
+
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">Email*</label>
+                              <input type="email" class="form-control" placeholder="Your Name">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">No Whatsapp*</label>
+                              <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">No Kantor</label>
+                              <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                          </div>
+
                         </div>
+                      
+                          
                         <div class="row mb-4">
+                          <div class="col-md-12 mb-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">Website</label>
+                              <input type="text" class="form-control" placeholder="https://...">
+                            </div>
+                        </div>
                             <div class="col-md-12 mb-4">
                                 <div class="mb20">
                                   <label class="heading-color ff-heading fw600 mb10">Alamat</label>

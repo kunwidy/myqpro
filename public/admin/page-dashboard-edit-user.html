@@ -227,10 +227,10 @@
               <a href="page-dashboard-master.html" class="items-center"><i class="flaticon-ruler mr15"></i>Master Properti</a>
             </div>
             <div class="sidebar_list_item ">
-                <a href="page-dashboard-owner.html" class="items-center -is-active"><i class="flaticon-photo mr15"></i>Master Owner</a>
+              <a href="page-dashboard-owner.html" class="items-center"><i class="flaticon-security mr15"></i>Master Owner</a>
             </div>
             <div class="sidebar_list_item ">
-              <a href="page-dashboard-add-user.html" class="items-center"><i class="flaticon-photo mr15"></i>Tambah User</a>
+              <a href="page-dashboard-add-user.html" class="items-center -is-active"><i class="flaticon-photo mr15"></i>Tambah User</a>
             </div>
   
   
@@ -244,16 +244,16 @@
         
             <p class="fz15 fw400 ff-heading mt30">MANAGE ACCOUNT</p>
             <div class="sidebar_list_item ">
-              <a href="settings-app.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
+              <a href="edit-profile.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
             </div>
             <div class="sidebar_list_item ">
-              <a href="edit-profile.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
+              <a href="page-agency-single.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
             </div>
             <div class="sidebar_list_item ">
               <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Logout</a>
             </div>
   
-        </div>
+          </div>
       </div>
       <div class="dashboard__main pl0-md">
         <div class="dashboard__content property-page bgc-f7">
@@ -283,37 +283,145 @@
           <div class="row align-items-center pb40">
             <div class="col-xxl-3">
               <div class="dashboard_title_area">
-                <h2>Daftar Owner</h2>
-                <p class="text">pada : 27 Agustus 2023</p>
+                <h2>Ubah User</h2>
+                <p class="text">Edit informasi user</p>
               </div>
             </div>
             <div class="col-xxl-9">
               <div class="dashboard_search_meta d-md-flex align-items-center justify-content-xxl-end">
-                <div class="item1 mb15-sm">
-                  <div class="search_area">
-                    <input type="text" class="form-control bdrs12" placeholder="Search">
-                    <label><span class="flaticon-search"></span></label>
-                  </div>
-                </div>
-                <div class="page_control_shorting bdr1 bdrs12 py-2 ps-3 pe-2 mx-1 mx-xxl-3 bgc-white mb15-sm maxw140">
-                  <div class="pcs_dropdown d-flex align-items-center"><span class="title-color">Sort by:</span>
-                    <select class="selectpicker show-tick">
-                      <option>All</option>
-                      <option>BUMN</option>
-                      <option>PEMDA</option>
-                      <option>SWASTA</option>
-                    </select>
-                  </div>
-                </div>
-                <a href="page-dashboard-user.html" class="ud-btn btn-thm">Lihat user<i class="fal fa-arrow-right-long"></i></a>
+                <a href="page-dashboard-user.html" class="ud-btn btn-thm"><i class="fal fa-arrow-left-long"></i> Lihat semua user</a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xl-12">
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+                <!--form start-->
+                <div class="col-xl-7">
+                    <div class="profile-box position-relative d-md-flex align-items-end mb50">
+                        <div class="profile-img position-relative overflow-hidden bdrs12 mb20-sm">
+                        <img class="w-100" src="../../assets/images/listings/profile-1.jpg" alt="">
+                        <a href="" class="tag-del" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete Image" aria-label="Delete Item"><span class="fas fa-trash-can"></span></a>
+                        </div>
+                        <div class="profile-content ml30 ml0-sm">
+                        <a href="" class="ud-btn btn-white2 mb30">Upload Profile Files<i class="fal fa-arrow-right-long"></i></a>
+                        <p class="text">Photos must be JPEG or PNG format and least 240x240</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <form class="form-style1">
+                        <div class="row mb-4">
+                          <div class="col-sm-6 col-xl-8">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">Nama Perusahaan*</label>
+                              <input type="text" class="form-control" value="PT QUADRAN ENERGI">
+                            </div>
+                          </div>
 
-                
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="ui-content mb40">
+                              <div class="form-style1">
+                                <label class="form-label fw600 dark-color">Lembaga</label>
+                                <div class="bootselect-multiselect">
+                                  <select class="selectpicker" data-live-search="true" data-width="100%">
+                                    <option>Search</option>
+                                    <option data-tokens="BUMN">BUMN</option>
+                                    <option data-tokens="Pemprov">PEMPROV</option>
+                                    <option data-tokens="Pemkot">PEMKOT</option>
+                                    <option data-tokens="Pemkot">PEMDA</option>
+                                    <option data-tokens="Pemkot">Universitas</option>
+                                  </select>
+                                </div>
+                              </div>
+                          </div>
+                          </div>
+
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">Email*</label>
+                              <input type="email" class="form-control" value="admin@quadranenergi.id">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">No Whatsapp*</label>
+                              <input type="text" class="form-control" value="+62 1234 5678">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">No Kantor</label>
+                              <input type="text" class="form-control" value="022 1234 5672">
+                            </div>
+                          </div>
+
+                        </div>
+                      
+                          
+                        <div class="row mb-4">
+                          <div class="col-md-12 mb-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">Website</label>
+                              <input type="text" class="form-control" value="https://quadranenergi.id/">
+                            </div>
+                        </div>
+                            <div class="col-md-12 mb-4">
+                                <div class="mb20">
+                                  <label class="heading-color ff-heading fw600 mb10">Alamat</label>
+                                  <input type="text" class="form-control" placeholder="Alamat">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb10">
+                                  <label class="heading-color ff-heading fw600 mb10">Tentang Perusahaan</label>
+                                  <textarea cols="30" rows="4" placeholder="There are many variations of passages."></textarea>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                            <h4 class="title fz17 mb30">Role & Password</h4>
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="ui-content mb40">
+                                    <div class="form-style1">
+                                      <label class="form-label fw600 dark-color">Tipe user</label>
+                                      <div class="bootselect-multiselect">
+                                        <select class="selectpicker" data-live-search="true" data-width="100%">
+                                          <option>Pilih</option>
+                                          <option data-tokens="PEMDA">Tenant</option>
+                                          <option data-tokens="BUMN">Owner --  BUMN</option>
+                                          <option data-tokens="BUMN">Owner --  PEMDA</option>
+                                          <option data-tokens="BUMN">Owner --  PEMPROV</option>
+                                          <option data-tokens="BUMN">Owner --  PEMKOT</option>
+                                          <option data-tokens="BUMN">Owner --  Universitas</option>
+                                          <option data-tokens="Administrator">Admin</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xl-4">
+                                <div class="mb20">
+                                  <label class="heading-color ff-heading fw600 mb10">*Password</label>
+                                  <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xl-4">
+                                <div class="mb20">
+                                  <label class="heading-color ff-heading fw600 mb10">*Ulangi Password</label>
+                                  <input type="password" class="form-control" placeholder="Ulangi password">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-end">
+                              <a class="ud-btn btn-dark" href="page-dashboard-user.html">Buat user<i class="fal fa-arrow-right-long"></i></a>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+                <!--form end-->
               </div>
             </div>
           </div>
@@ -323,7 +431,7 @@
             <div class="row items-center justify-content-center justify-content-md-between">
               <div class="col-auto">
                 <div class="copyright-widget">
-                  <p class="text">© MYQPro v.1.0 - All rights reserved</p>
+                  <p class="text">© Myqpro - All rights reserved</p>
                 </div>
               </div>
               <div class="col-auto">

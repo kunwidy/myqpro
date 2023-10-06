@@ -163,45 +163,45 @@
     <div class="dashboard dashboard_wrapper pr30 pr0-md">
       <div class="dashboard__sidebar d-none d-lg-block">
         <div class="dashboard_sidebar_list">
-          <div class="sidebar_list_item">
-            <a href="page-dashboard.html" class="items-center"><i class="flaticon-discovery mr15"></i>Dashboard</a>
+            <div class="sidebar_list_item">
+              <a href="page-dashboard.html" class="items-center"><i class="flaticon-discovery mr15"></i>Dashboard</a>
+            </div>
+            <div class="sidebar_list_item ">
+              <a href="page-dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Pesan</a>
+            </div>
+  
+            <p class="fz15 fw400 ff-heading mt30">MASTER DATA</p>
+            <div class="sidebar_list_item ">
+              <a href="page-dashboard-master.html" class="items-center"><i class="flaticon-ruler mr15"></i>Master Properti</a>
+            </div>
+            <div class="sidebar_list_item ">
+              <a href="page-dashboard-owner.html" class="items-center"><i class="flaticon-security mr15"></i>Master Owner</a>
+            </div>
+            <div class="sidebar_list_item ">
+              <a href="page-dashboard-add-user.html" class="items-center"><i class="flaticon-photo mr15"></i>Tambah User</a>
+            </div>
+  
+  
+            <p class="fz15 fw400 ff-heading mt30">REPORT</p>
+            <div class="sidebar_list_item ">
+              <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>Tabel Properti</a>
+            </div>
+            <div class="sidebar_list_item ">
+              <a href="page-dashboard-user.html" class="items-center"><i class="flaticon-user-1 mr15"></i>Tabel User</a>
+            </div>
+        
+            <p class="fz15 fw400 ff-heading mt30">Kelola akun</p>
+            <div class="sidebar_list_item ">
+              <a href="settings-app.html" class="items-center -is-active"><i class="flaticon-settings mr15"></i>Settings</a>
+            </div>
+            <div class="sidebar_list_item ">
+              <a href="edit-profile.html" class="items-center"><i class="flaticon-user mr15"></i>My Profile</a>
+            </div>
+            <div class="sidebar_list_item ">
+              <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Keluar</a>
+            </div>
+  
           </div>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Pesan</a>
-          </div>
-
-          <p class="fz15 fw400 ff-heading mt30">MASTER DATA</p>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-master.html" class="items-center"><i class="flaticon-ruler mr15"></i>Master Properti</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-owner.html" class="items-center"><i class="flaticon-security mr15"></i>Master Owner</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-add-user.html" class="items-center"><i class="flaticon-photo mr15"></i>Tambah User</a>
-          </div>
-
-
-          <p class="fz15 fw400 ff-heading mt30">REPORT</p>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-properties.html" class="items-center"><i class="flaticon-home mr15"></i>Tabel Properti</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-dashboard-user.html" class="items-center"><i class="flaticon-user-1 mr15"></i>Tabel User</a>
-          </div>
-      
-          <p class="fz15 fw400 ff-heading mt30">Kelola akun</p>
-          <div class="sidebar_list_item ">
-            <a href="settings-app.html" class="items-center"><i class="flaticon-settings mr15"></i>Settings</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="edit-profile.html" class="items-center -is-active"><i class="flaticon-user mr15"></i>My Profile</a>
-          </div>
-          <div class="sidebar_list_item ">
-            <a href="page-login.html" class="items-center"><i class="flaticon-logout mr15"></i>Keluar</a>
-          </div>
-
-        </div>
       </div>
 
       <div class="dashboard__main pl0-md">
@@ -252,10 +252,26 @@
                 <div class="col-lg-12">
                   <form class="form-style1">
                     <div class="row">
-                      <div class="col-sm-6 col-xl-12">
+                      <div class="col-sm-6 col-xl-8">
                         <div class="mb20">
-                          <label class="heading-color ff-heading fw600 mb10">Nama*</label>
+                          <label class="heading-color ff-heading fw600 mb10">Nama Perusahaan*</label>
                           <input type="text" class="form-control" placeholder="Nama perusahaan">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-4">
+                        <div class="ui-content mb20">
+                          <div class="mb20">
+                            <label class="heading-color ff-heading fw600 mb10">Kepemilikan properti</label>
+                            <div class="location-area">
+                              <select class="selectpicker">
+                                <option>BUMN</option>
+                                <option>PEMPROV</option>
+                                <option>PEMKOT</option>
+                                <option>PEMDA</option>
+                                <option>Universitas</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       
@@ -309,26 +325,38 @@
               </div>
               
               <div class="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
-                <h4 class="title fz17 mb30">Ganti password</h4>
+                <h4 class="title fz17 mb30">Sosial Media MYQPRO</h4>
                 <form class="form-style1">
                   <div class="row">
                     <div class="col-sm-6 col-xl-6">
                       <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">Password Lama</label>
-                        <input type="text" class="form-control" placeholder="Your Name">
+                        <label class="heading-color ff-heading fw600 mb10">Facebook</label>
+                        <input type="text" class="form-control" value="https://www.facebook.com/profile.php?id=100095614178992">
                       </div>
                     </div>
                     <div class="col-sm-6 col-xl-6">
                       <div class="mb20">
-                        <label class="heading-color ff-heading fw600 mb10">Password Baru</label>
-                        <input type="text" class="form-control" placeholder="Your Name">
+                        <label class="heading-color ff-heading fw600 mb10">Instagram</label>
+                        <input type="text" class="form-control" value="https://www.instagram.com/myqpro.id/">
                       </div>
                     </div>
+                    <div class="col-sm-6 col-xl-6">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">LinkedIn</label>
+                          <input type="text" class="form-control" value="https://www.linkedin.com/in/myqpro-id-883470287/">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-6">
+                        <div class="mb20">
+                          <label class="heading-color ff-heading fw600 mb10">Youtube</label>
+                          <input type="text" class="form-control" value="https://www.youtube.com/myqpro/">
+                        </div>
+                      </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12">
                       <div class="text-end">
-                        <a class="ud-btn btn-dark" href="page-contact.html">Ganti Password<i class="fal fa-arrow-right-long"></i></a>
+                        <a class="ud-btn btn-dark" href="page-contact.html">Simpan<i class="fal fa-arrow-right-long"></i></a>
                       </div>
                     </div>
                   </div>
@@ -342,7 +370,7 @@
             <div class="row items-center justify-content-center justify-content-md-between">
               <div class="col-auto">
                 <div class="copyright-widget">
-                  <p class="text">© Homez - All rights reserved</p>
+                  <p class="text">© MYQPRO - All rights reserved</p>
                 </div>
               </div>
               <div class="col-auto">
