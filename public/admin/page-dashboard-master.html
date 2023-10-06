@@ -281,13 +281,13 @@
             </div>
           </div>
           <div class="row align-items-center pb40">
-            <div class="col-xxl-3">
+            <div class="col-xxl-8">
               <div class="dashboard_title_area">
                 <h2>Master data properti</h2>
                 <p class="text">Lengkapi form di bawah ini</p>
               </div>
             </div>
-            <div class="col-xxl-9">
+            <div class="col-xxl-4">
               <div class="dashboard_search_meta d-md-flex align-items-center justify-content-xxl-end">
                 <a href="page-dashboard-properties.html" class="ud-btn btn-thm"><i class="fal fa-arrow-left-long"></i> Lihat properti</a>
               </div>
@@ -364,7 +364,7 @@
                                                 <td class="vam text-end">
                                                     <div class="d-flex justify-content-end">
                                                       <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
-                                                      <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                                      <a href="#kateModal" data-bs-toggle="modal" data-bs-target="#kateModal" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -375,7 +375,7 @@
                                                 <td class="vam text-end">
                                                   <div class="d-flex justify-content-end">
                                                     <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
-                                                    <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                                    <a href="#kateModal" data-bs-toggle="modal" data-bs-target="#kateModal"  class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
                                                   </div>
                                                 </td>
                                             </tr>
@@ -386,7 +386,7 @@
                                                 <td class="vam text-end">
                                                   <div class="d-flex justify-content-end">
                                                     <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Hapus"><span class="flaticon-bin"></span></a>
-                                                    <a href="" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
+                                                    <a href="#kateModal" data-bs-toggle="modal" data-bs-target="#kateModal"  class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="fas fa-pen fa"></span></a>
                                                   </div>
                                                 </td>
                                             </tr>
@@ -410,11 +410,13 @@
                       </div>
                       <div class="tab-pane fade fz15" id="nav-item2" role="tabpanel" aria-labelledby="nav-item2-tab">
                         <div class="row">
-                            <div class="col-md-6 bgc-f7 p30">
+                            <div class="col-md-12 bgc-f7 p30">
                                 <h4 class="title fz17 mb30">Tambahkan info detail properti :</h4>
                                 
                                 <form class="form-style1">
-                                    <div class="ui-content mb40">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="ui-content mb40">
                                         <div class="form-style1">
                                             <label class="form-label fw600 dark-color">Pilih tipe properti</label>
                                             <div class="bootselect-multiselect">
@@ -425,11 +427,18 @@
                                             </select>
                                             </div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="mb40">
+
+                                    <div class="col-md-6">
+                                      <div class="mb40">
                                         <label class="heading-color ff-heading fw600 mb10">Nama detail</label>
                                         <input type="text" class="form-control" placeholder="Luas tanah">
                                     </div>
+                                    </div>
+                                  </div>
+                                    
+                                    
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="ui-content mb40">
@@ -467,7 +476,7 @@
                                 </form>
                                 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12 mt30">
                                 <div class="table-style1 table-responsive mb-4 mb-lg-5">
                                     <table class="table table-borderless table-style3">
                                         <thead class="thead-light">
@@ -502,11 +511,13 @@
                       </div>
                       <div class="tab-pane fade fz15" id="nav-item3" role="tabpanel" aria-labelledby="nav-item3-tab">
                         <div class="row">
-                            <div class="col-md-6 bgc-f7 p30">
+                            <div class="col-md-12 bgc-f7 p30">
                                 <h4 class="title fz17 mb30">Tambahkan fasilitas properti :</h4>
                                 
                                 <form class="form-style1">
-                                    <div class="ui-content mb40">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="ui-content mb40">
                                         <div class="form-style1">
                                             <label class="form-label fw600 dark-color">Pilih tipe properti</label>
                                             <div class="bootselect-multiselect">
@@ -518,19 +529,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mb40">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="mb40">
                                         <label class="heading-color ff-heading fw600 mb10">Nama Fasilitas</label>
                                         <input type="text" class="form-control" placeholder="WiFi">
+                                      </div>
                                     </div>
+                                  </div>
+                                    
+          
                                     
                                     
                                     <div class="text-end">
-                                        <a class="ud-btn btn-dark" href="page-dashboard-user.html">Tambahkan<i class="fal fa-arrow-right-long"></i></a>
+                                        <a class="ud-btn btn-dark" href="#">Tambahkan<i class="fal fa-arrow-right-long"></i></a>
                                         </div>
                                 </form>
                                 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12 mt30">
                                 <div class="table-style1 table-responsive mb-4 mb-lg-5">
                                     <table class="table table-borderless table-style3">
                                         <thead class="thead-light">
@@ -588,6 +605,35 @@
               <div class="modal-footer">
                 <button type="button" class="btn ud-btn btn-danger" data-bs-dismiss="modal"><span class="flaticon-bin text-white"></span></button>
                 <button type="button" class="btn ud-btn btn-thm">Simpan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal kategori -->
+        <div class="modal fade" id="kateModal" tabindex="-1" aria-labelledby="kateModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-5" id="kateModalLabel">Tipe properti</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="log-reg-form">
+                  <div class="form-style1">
+                    <div class="mb25">
+                      <label class="form-label fw600 dark-color">Nama tipe properti</label>
+                      <input type="text" class="form-control" value="Tanah">
+                    </div>
+                    <div class="mb25">
+                      <label class="form-label fw600 dark-color">Icon</label>
+                      <input type="text" class="form-control" placeholder="Masukan Email Anda">
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn ud-btn btn-thm" data-bs-dismiss="modal">Simpan</button>
               </div>
             </div>
           </div>
