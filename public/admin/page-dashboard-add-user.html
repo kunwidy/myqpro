@@ -218,16 +218,13 @@
             <div class="sidebar_list_item">
               <a href="page-dashboard.html" class="items-center"><i class="flaticon-discovery mr15"></i>Dashboard</a>
             </div>
-            <div class="sidebar_list_item ">
-              <a href="page-dashboard-message.html" class="items-center"><i class="flaticon-chat-1 mr15"></i>Message</a>
-            </div>
   
             <p class="fz15 fw400 ff-heading mt30">MASTER DATA</p>
             <div class="sidebar_list_item ">
               <a href="page-dashboard-master.html" class="items-center"><i class="flaticon-ruler mr15"></i>Master Properti</a>
             </div>
             <div class="sidebar_list_item ">
-              <a href="page-dashboard-owner.html" class="items-center"><i class="flaticon-security mr15"></i>Master Owner</a>
+              <a href="page-dashboard-owner.html" class="items-center"><i class="flaticon-security mr15"></i>Kemeplikan</a>
             </div>
             <div class="sidebar_list_item ">
               <a href="page-dashboard-add-user.html" class="items-center -is-active"><i class="flaticon-photo mr15"></i>Tambah User</a>
@@ -312,9 +309,16 @@
                 <div class="col-lg-12">
                     <form class="form-style1">
                         <div class="row mb-4">
-                          <div class="col-sm-6 col-xl-8">
+                          <div class="col-sm-6 col-xl-4">
                             <div class="mb20">
-                              <label class="heading-color ff-heading fw600 mb10">Nama Perusahaan*</label>
+                              <label class="heading-color ff-heading fw600 mb10">Nama Pengguna*</label>
+                              <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                          </div>
+
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="mb20">
+                              <label class="heading-color ff-heading fw600 mb10">Nama / Nama Perusahaan</label>
                               <input type="text" class="form-control" placeholder="Nama perusahaan">
                             </div>
                           </div>
@@ -351,7 +355,7 @@
                           </div>
                           <div class="col-sm-6 col-xl-4">
                             <div class="mb20">
-                              <label class="heading-color ff-heading fw600 mb10">No Kantor</label>
+                              <label class="heading-color ff-heading fw600 mb10">No Telepon kantor</label>
                               <input type="text" class="form-control" placeholder="Your Name">
                             </div>
                           </div>
@@ -374,7 +378,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="mb10">
-                                  <label class="heading-color ff-heading fw600 mb10">Tentang Perusahaan</label>
+                                  <label class="heading-color ff-heading fw600 mb10">Profil singkat</label>
                                   <textarea cols="30" rows="4" placeholder="There are many variations of passages."></textarea>
                                 </div>
                               </div>
@@ -385,16 +389,12 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="ui-content mb40">
                                     <div class="form-style1">
-                                      <label class="form-label fw600 dark-color">Tipe user</label>
+                                      <label class="form-label fw600 dark-color">Role user</label>
                                       <div class="bootselect-multiselect">
                                         <select class="selectpicker" data-live-search="true" data-width="100%">
                                           <option>Pilih</option>
                                           <option data-tokens="PEMDA">Tenant</option>
-                                          <option data-tokens="BUMN">Owner --  BUMN</option>
-                                          <option data-tokens="BUMN">Owner --  PEMDA</option>
-                                          <option data-tokens="BUMN">Owner --  PEMPROV</option>
-                                          <option data-tokens="BUMN">Owner --  PEMKOT</option>
-                                          <option data-tokens="BUMN">Owner --  Universitas</option>
+                                          <option data-tokens="BUMN">Owner</option>
                                           <option data-tokens="Administrator">Admin</option>
                                         </select>
                                       </div>
